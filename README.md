@@ -2,7 +2,7 @@
 
 A website built with React, context API. Functionality includes Details Page, Add to Cart function, products cursor movement preview among others.
 
-Deployed live at : https://maxly-react-showsify.netlify.app
+Deployed live at : https://maxly-joyjewels.netlify.app
 
 ![](SitePreview.png)
 
