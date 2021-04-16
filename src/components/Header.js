@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
-import Menu from './svg/bars-solid.svg';
-import Close from './svg/times-solid.svg';
-import Cart from './svg/cart.svg';
+import Menu from '../assets/svg/bars-solid.svg';
+import Close from '../assets/svg/times-solid.svg';
+import Cart from '../assets/svg/cart.svg';
 import { Link } from 'react-router-dom';
 import { DataContext } from './DataProvider';
 
