@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Products from './components/Products';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { DataProvider } from './components/DataProvider';
 import Details from './components/Details';
 import Cart from './components/Cart';
@@ -14,12 +14,12 @@ function App() {
         <Router>
           <Header />
           <section>
-            <Routes>
-              <Route path='/' element={<Products />} />
-              <Route path='products' element={<Products />} />
-              <Route path='products/:id' element={<Details />} />
-              <Route path='cart' element={<Cart />} />
-            </Routes>
+            <Switch>
+              <Route exact path='/' component={Products} />
+              <Route exact path='/products' component={Products} />
+              <Route path='/products/:id' component={Details} />
+              <Route path='/cart' component={Cart} />
+            </Switch>
           </section>
           <Footer />
         </Router>
